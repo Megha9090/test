@@ -1,0 +1,13 @@
+from tkinter import*
+ncec=Tk()
+ncec.geometry("500x500")
+ncec.resizable(0,0)
+x=StringVar()
+e1=Entry(ncec,font=("Arial,25"),textvariable=x)
+e1.pack()
+def show():
+    s=x.get()
+    print(s)
+b1=Button(ncec,text="Click It",font=("Arial,30"),command=show)
+b1.pack()
+ncec.mainloop()
